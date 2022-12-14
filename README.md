@@ -78,3 +78,7 @@ jdbc-h2 - banco em memoria pra testes
 hibernate-orm -
 hibernate-orm-panache - framework pra ajudar a manipular as entidades e fazer operações no banco
 resteasy-jsonb -
+
+
+.\mvnw quarkus:add-extension -Dextensions="jdbc-postgresql" 
+
