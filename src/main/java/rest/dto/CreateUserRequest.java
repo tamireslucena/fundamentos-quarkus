@@ -1,4 +1,4 @@
-package io.github.tamireslucena.dto;
+package rest.dto;
 
 public class CreateUserRequest {
     private String name;
