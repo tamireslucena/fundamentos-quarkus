@@ -10,7 +10,7 @@ import java.util.Objects;
 public class User extends PanacheEntityBase {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // é um autoincrement
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column
     private String name;
@@ -64,5 +64,7 @@ public class User extends PanacheEntityBase {
 
     @Table(name= "users")
     @Column(name= "nome")
+
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // é um autoincrement
 
  */
