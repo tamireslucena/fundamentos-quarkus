@@ -5,3 +5,10 @@ CREATE TABLE users (
     name VARCHAR(100) NOT NULL,
     age INTEGER NOT NULL
 )
+
+CREATE TABLE posts (
+    id BIGSERIAL NOT NULL PRIMARY KEY,
+    post VARCHAR(150) NOT NULL,
+    created_at TIMESTAMP,
+    user_id BIGINT NOT NULL REFERENCES users(id)
+)
